@@ -1,0 +1,18 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 3000 --open",
+    "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
